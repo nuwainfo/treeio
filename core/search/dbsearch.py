@@ -21,7 +21,8 @@ def search(term):
     "Use database backend for searching"
     query = Q()
     #query_dict = {}
-    attr = 'search'
+#     attr = 'search'
+    attr = 'icontains'
     if term and term[0] == '*':
         attr = 'icontains'
         term = term[1:]
